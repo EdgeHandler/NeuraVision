@@ -28,3 +28,5 @@ Then do the following to save and close the editor:
 Now either do source .bashrc or close and open another terminal
 
 ## Installing CuDNN is required for DNN application for CuDNN
+
+Go to Nvidia CuDNN library...
