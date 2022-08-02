@@ -26,3 +26,5 @@ Then do the following to save and close the editor:
  enter or return key  --> accept changes
  ctrl + x             --> close editor
 Now either do source .bashrc or close and open another terminal
+
+## An Important part is installing cuDNN
