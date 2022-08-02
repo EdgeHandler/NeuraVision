@@ -27,14 +27,7 @@ UPDATE BASH PROFILE:
 -source ~/.bashrc
 
 SUPPORTING LIBRARIES FOR OPENCV:
--sudo apt-get install build-essential pkg-config
--sudo apt-get install libtbb2 libtbb-dev
--sudo apt-get -y install libavcodec-dev libavformat-dev libswscale-dev
--sudo apt-get install libxvidcore-dev libavresample-dev
--sudo apt-get -y install libtiff-dev libjpeg-dev libpng-dev
--sudo apt-get -y install python-tk libgtk-3-dev
--sudo apt-get install libcanberra-gtk-module libcanberra-gtk3-module
--sudo apt-get -y install libv4l-dev libdc1394-22-dev
+-sudo apt-get install build-essential pkg-config libtbb2 libtbb-dev libavcodec-dev libavformat-dev libswscale-dev libxvidcore-dev libavresample-dev libtiff-dev libjpeg-dev libpng-dev python-tk libgtk-3-dev libcanberra-gtk-module libcanberra-gtk3-module libv4l-dev libdc1394-22-dev
 
 
 
