@@ -1,4 +1,4 @@
-Jetson Xavier NX
+# Jetson Xavier NX
 
-Boot With SSD
-1.
+## Boot With SSD
+1. []
