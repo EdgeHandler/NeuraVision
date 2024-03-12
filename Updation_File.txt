@@ -1,0 +1,52 @@
+Installing CuDNN 9.0 using .deb Package
+
+Web-Link : https://developer.nvidia.com/cudnn-downloads?target_os=Linux&target_arch=aarch64-jetson&Compilation=Native&Distribution=Ubuntu&target_version=20.04&target_type=deb_local
+
+-> wget https://developer.download.nvidia.com/compute/cudnn/9.0.0/local_installers/cudnn-local-tegra-repo-ubuntu2004-9.0.0_1.0-1_arm64.deb
+-> sudo dpkg -i cudnn-local-tegra-repo-ubuntu2004-9.0.0_1.0-1_arm64.deb
+-> sudo cp /var/cudnn-local-tegra-repo-ubuntu2004-9.0.0/cudnn-*-keyring.gpg /usr/share/keyrings/
+-> sudo apt-get update
+-> sudo apt-get -y install cudnn
+
+
+Python3.6 Issue - Installing Python3.8
+
+Article-Link : https://jetsonhacks.com/2023/06/12/upgrade-python-on-jetson-nano-tutorial/
+
+$ sudo apt update && sudo apt upgrade
+$ sudo apt install python3.8
+
+$ cd /usr/local
+$ ls -ll python3
+$ ln -s /usr/local/python3.8 python3
+
+
+Installing Numpy
+
+$ cd /usr/local
+$ ls -ll pip
+$ /usr/bin/python3.8 -m pip install --upgrade pip
+$ pip3 install numpy
+$ python3.8
+>> import numpy
+
+
+Installing ONNX & ONNXRuntime
+
+$ pip3 install onnx
+$ pip3 install onnxruntime
+
+
+Building OpenCV & OpenCV Contrib
+
+1. Download OpenCV : https://github.com/opencv/opencv
+2. Download OpenCV_Contrib : https://github.com/opencv/opencv_contrib 
+3. Extract OpenCV & OpenCV_Contrib
+4. Rename opencv-4.x to opencv & opencv_contrib-4.x to opencv_contrib
+5. Run these commands :
+
+$ cd opencv
+$ mkdir build
+$ cd build
+$
+
