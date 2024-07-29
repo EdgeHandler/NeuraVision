@@ -29,6 +29,7 @@ sudo echo 255 > /sys/devices/pwm-fan/target_pwm
         -D WITH_CUDA=ON \
         -D WITH_CUDNN=ON \
         -D CUDA_ARCH_BIN=7.2 \
+        -D PYTHON_DEFAULT_EXECUTABLE=$(which python3) \
         -D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules/ \
         -D PYTHON3_EXECUTABLE=$(which python3) \
         -D PYTHON3_INCLUDE_DIR=$(python3 -c "from distutils.sysconfig import get_python_inc; print(get_python_inc())") \
