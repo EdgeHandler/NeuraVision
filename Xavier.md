@@ -11,4 +11,6 @@ sudo echo 255 > /sys/devices/pwm-fan/target_pwm
     sudo apt-key add /var/cuda-repo-ubuntu1804-11-0-local/7fa2af80.pub
     sudo apt-get update
     sudo apt-get -y install cuda
+### For Dpkg Errors
+`sudo apt-get -o Dpkg::Options::="--force-overwrite" install --fix-broken`
 
