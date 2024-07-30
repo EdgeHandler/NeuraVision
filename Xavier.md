@@ -3,6 +3,10 @@
 ### For Fan
 sudo echo 255 > /sys/devices/pwm-fan/target_pwm 
 
+### For Fan Start on Every Boot
+sudo crontab -e
+Add @reboot sh /home/xavier/fan_on.sh
+
 ### For CUDA-11.0
     wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/sbsa/cuda-ubuntu1804.pin
     sudo mv cuda-ubuntu1804.pin /etc/apt/preferences.d/cuda-repository-pin-600
