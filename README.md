@@ -15,8 +15,12 @@
 10. `sduo apt-get upgrade`. and `sudo apt dist-upgrade.`
 11. [Download](https://developer.nvidia.com/cudnn-download-survey) CUDNN from here an Nvidia account is needed.
 12. Open the terminal and move the file of CuDNN from Downloads directory to home directory.
-13. For installing the file use [refer](https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html).
-14. From the terminal for exporting  cuda toolkit path :-
+    
+           sudo cp cudnn-linux-<distro>/include/cudnn*.h /usr/local/cuda-10.2/include
+           sudo cp cudnn-linux-<distro>/lib/libcudnn* /usr/local/cuda-10.2/lib64
+           sudo chmod a+r /usr/local/cuda-10.2/include/cudnn*.h /usr/local/cuda-10.2/lib64/libcudnn*
+14. For installing the file use [refer](https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html).
+15. From the terminal for exporting  cuda toolkit path :-
 
            nano /home/username/.bashrc
 
