@@ -2,7 +2,7 @@ SYSTEM LEVEL PACKAGES:
 -sudo apt-get update
 -sudo apt-get upgrade
 SYSTEM LEVEL DEPENDENCIES:
--sudo apt-get install git cmake libatlas-base-dev gfortran libhdf5-serial-dev hdf5-tools install python3-dev nano locate libfreetype6-dev python3-setuptools protobuf-compiler libprotobuf-dev openssl libssl-dev libcurl4-openssl-dev cython3 libxml2-dev libxslt1-dev
+-sudo apt-get install git cmake libatlas-base-dev gfortran libhdf5-serial-dev hdf5-tools python3-dev nano locate libfreetype6-dev python3-setuptools protobuf-compiler libprotobuf-dev openssl libssl-dev libcurl4-openssl-dev cython3 libxml2-dev libxslt1-dev
 
 UPDATE CMAKE:
 - wget http://www.cmake.org/files/v3.22/cmake-3.22.0.tar.gz
