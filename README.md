@@ -49,4 +49,10 @@ Compilation happens in three steps 1.) Prebuild 2.) build 3.) Install. \
 when compiling read the pre build report carefully. It tells about the state of all the selected flags during cmake build. Check in report if cuDNN, and cuda is read by cmake or not. If they are not detected. remove the build folder using the command ` sudo rm -rf build ` from inside the opencv directory and fix the relevant issue then build again.
 
 Installing any software by compiling from source, is a one way process if we install it we won't be able to uninstall it. In such case reinstallation of OS is the only solution. So read and understand the pre-build report.
-    
+
+###Python3.6.9 Updation -> Python 3.8 on Ubuntu 18.04
+- sudo apt-get update -y
+- sudo apt upgrade -y
+- sudo apt-get install python3.8 #Installing Python3.8 on the system
+- sudo rm -rf /usr/bin/python3 #Removing existing Symlink
+- sudo ln /usr/bin/python3.8 /usr/bin/python #Creating a new symlink to use Python3.8
